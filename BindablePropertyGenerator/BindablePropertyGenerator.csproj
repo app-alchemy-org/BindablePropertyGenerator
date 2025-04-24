@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<PackageId>BindablePropertyGenerator</PackageId>
+		<Version>1.0.10</Version>
+		<Authors>Christian Strydom</Authors>
+		<Description>Source generator for bindable property boilerplate</Description>
+	</PropertyGroup>
+
+	<!-- Add reference to attribute for packing -->
+	<ItemGroup>
+		<ProjectReference Include="..\Attributes\BindablePropertyGenerator.Attributes.csproj" />
+	</ItemGroup>
+
+	<!-- Just reference the analyzer, don’t build it again -->
+	<ItemGroup>
+		<Analyzer Include="..\artifacts\BindablePropertyGenerator.SourceGenerators\BindablePropertyGenerator.SourceGenerators.dll" />
+	</ItemGroup>
+
+	<!-- Manually pack attribute DLL -->
+	<Target Name="IncludeAttributeDllInPackage" AfterTargets="Build">
+		<ItemGroup>
+			<_AttrDll Include="..\Attributes\bin\$(Configuration)\netstandard2.0\BindablePropertyGenerator.Attributes.dll" />
+		</ItemGroup>
+		<ItemGroup>
+			<None Include="@(_AttrDll->'%(FullPath)')"
+				  Pack="true"
+				  PackagePath="lib/netstandard2.0/" />
+		</ItemGroup>
+	</Target>
+
+	<!-- Manually pack analyzer DLL -->
+	<Target Name="IncludeAnalyzerInPackage" AfterTargets="Build">
+		<ItemGroup>
+			<_AnalyzerDll Include="..\artifacts\BindablePropertyGenerator.SourceGenerators\BindablePropertyGenerator.SourceGenerators.dll" />
+		</ItemGroup>
+		<ItemGroup>
+			<None Include="@(_AnalyzerDll->'%(FullPath)')"
+				  Pack="true"
+				  PackagePath="analyzers/dotnet/cs/" />
+		</ItemGroup>
+	</Target>
+
+</Project>

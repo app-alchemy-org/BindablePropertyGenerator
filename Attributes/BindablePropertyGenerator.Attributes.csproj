@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	  <PackageId>BindablePropertyGenerator.Attributes</PackageId>
+	  <Version>1.0.17</Version>
+	  <Authors>App Alchemy, Christian Strydom</Authors>
+	  <Description>Source generator for bindable property boilerplate</Description>
+  </PropertyGroup>
+
+</Project>
