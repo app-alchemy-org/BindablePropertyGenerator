@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindablePropertyGenerator.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindablePropertyGenerator.Attributes", "Attributes\BindablePropertyGenerator.Attributes.csproj", "{14D7869D-041E-48AC-93DA-42768A25DAEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindablePropertyGenerator", "BindablePropertyGenerator\BindablePropertyGenerator.csproj", "{B2C9056C-8912-47A4-A8C5-60E0B208CDEC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{14D7869D-041E-48AC-93DA-42768A25DAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14D7869D-041E-48AC-93DA-42768A25DAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14D7869D-041E-48AC-93DA-42768A25DAEA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2C9056C-8912-47A4-A8C5-60E0B208CDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2C9056C-8912-47A4-A8C5-60E0B208CDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2C9056C-8912-47A4-A8C5-60E0B208CDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2C9056C-8912-47A4-A8C5-60E0B208CDEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

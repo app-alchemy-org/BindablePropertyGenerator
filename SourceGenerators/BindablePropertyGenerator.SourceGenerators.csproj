@@ -5,9 +5,13 @@
 		<LangVersion>9.0</LangVersion>
 		<IsRoslynComponent>true</IsRoslynComponent>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
-		<Version>1.0.17</Version>
+		<Version>1.0.20</Version>
 		<Authors>App Alchemy, Christian Strydom</Authors>
 		<Description>Source generator for bindable property boilerplate</Description>
+		<PackageProjectUrl>https://github.com/app-alchemy-org/BindablePropertyGenerator</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/app-alchemy-org/BindablePropertyGenerator</RepositoryUrl>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -17,6 +21,14 @@
 		</PackageReference>
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
 		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+		<None Include="..\LICENSE">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 </Project>

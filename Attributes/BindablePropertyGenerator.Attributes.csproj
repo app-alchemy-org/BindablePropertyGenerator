@@ -3,9 +3,24 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
 	  <PackageId>BindablePropertyGenerator.Attributes</PackageId>
-	  <Version>1.0.17</Version>
+	  <Version>1.0.20</Version>
 	  <Authors>App Alchemy, Christian Strydom</Authors>
 	  <Description>Source generator for bindable property boilerplate</Description>
+	  <PackageProjectUrl>https://github.com/app-alchemy-org/BindablePropertyGenerator</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/app-alchemy-org/BindablePropertyGenerator</RepositoryUrl>
+	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
